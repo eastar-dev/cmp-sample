@@ -1,0 +1,13 @@
+package dev.eastar.wlang
+
+import androidx.compose.ui.window.Window
+import androidx.compose.ui.window.application
+
+fun main() = application {
+    Window(
+        onCloseRequest = ::exitApplication,
+        title = "WLang",
+    ) {
+        App()
+    }
+}
